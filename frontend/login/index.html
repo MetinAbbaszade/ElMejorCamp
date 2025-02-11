@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mejor - Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="language-selector">
+        <select id="languageSelect">
+            <option value="az">Aze</option>
+            <option value="en">Eng</option>
+        </select>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="form-section" id="form-section">
+                <div class="form-header">
+                    <div class="step-indicator">
+                        <div class="step active" data-step="1">1</div>
+                        <div class="step-line"></div>
+                        <div class="step" data-step="2">2</div>
+                        <div class="step-line"></div>
+                        <div class="step" data-step="3">3</div>
+                    </div>
+                </div>
+                <form id="form">
+                    <div id="first-line" class="form-step active">
+                        <div class="form-step-header">
+                            <h2 data-translate="userInfo">İstifadəçi Məlumatları</h2>
+                            <p class="form-subtitle" data-translate="enterInfo">Məlumatlarınızı daxil edin</p>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="parent-info" data-translate="contactInfo">Əlaqə Məlumatlarınızı Daxil
+                                Edin</label>
+                            <div class="input-wrapper">
+                                <i class="input-icon fas fa-user"></i>
+                                <input type="text" id="parent-info" name="parent-info"
+                                    data-translate-placeholder="nameSurname" placeholder="Ad, Soyad" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="phone" data-translate="contactNumber">Əlaqə Nömrəniz</label>
+                            <div class="input-wrapper">
+                                <i class="input-icon fas fa-phone"></i>
+                                <input type="tel" id="phone" name="phone" data-translate-placeholder="phoneNumber"
+                                    placeholder="+994XXXXXXXXX" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="football-player-info" data-translate="playerInfo">Övladınızın(Futbolçunun)
+                                Məlumatları</label>
+                            <div class="input-wrapper">
+                                <i class="input-icon fas fa-user"></i>
+                                <input type="text" id="football-player-info" name="football-player-info"
+                                    data-translate-placeholder="nameSurname" placeholder="Ad, Soyad" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="age" data-translate="birthDate">Futbolçunun Doğum Tarixi</label>
+                            <div class="input-wrapper">
+                                <i class="input-icon fas fa-calendar"></i>
+                                <input type="date" id="age" name="age" required>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn" id="next-button" data-translate="next">Növbətİ <i
+                                class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div id="second-line" class="form-step">
+                        <div class="form-step-header">
+                            <h2 data-translate="additionalInfo">Əlavə Məlumatlar</h2>
+                            <p class="form-subtitle" data-translate="footballExperience">Futbol təcrübəniz haqqında
+                                məlumat verin</p>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="location" data-translate="address">Futbolçunun Yaşayış Ünvanı</label>
+                            <div class="input-wrapper">
+                                <i class="input-icon fas fa-trophy"></i>
+                                <input type="text" id="location" name="location"
+                                    data-translate-placeholder="addressPlaceholder" placeholder="Ölkə, Şəhər" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="club" data-translate="club">Futbolçunun oynadığı peşəkar/ ödənişli / həvəskar
+                                klub</label>
+                            <div class="input-wrapper">
+                                <i class="input-icon fas fa-trophy"></i>
+                                <input type="text" id="club" name="club" data-translate-placeholder="clubPlaceholder"
+                                    placeholder="Klubun adını daxil edin" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="position" data-translate="position">Oyun Mövqeyi</label>
+                            <div class="input-wrapper">
+                                <i class="input-icon fas fa-futbol select-icon"></i>
+                                <select id="position" name="position" required>
+                                    <option value="" data-translate="positionPlaceholder">Select Position</option>
+                                    <option value="goalkeeper" data-translate="goalkeeper">Qapıçı</option>
+                                    <option value="center-back" data-translate="centerBack">Mərkəz Müdafiəçi</option>
+                                    <option value="full-back" data-translate="fullBack">Kənar Müdafiəçi</option>
+                                    <option value="defensive-midfielder" data-translate="defensiveMidfielder">Dayaq Yarımmüdafiəçi</option>
+                                    <option value="central-midfielder" data-translate="centralMidfielder">Mərkəz Yarımmüdafiəçi</option>
+                                    <option value="attacking-midfielder" data-translate="attackingMidfielder">Hücumameyilli Yarımmüdafiəçi</option>
+                                    <option value="winger" data-translate="winger">Qanad Hücumçu</option>
+                                    <option value="center-forward" data-translate="centerForward">Mərkəz Hücumçu
+                                    </option>
+                                </select>
+
+
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="foot" data-translate="foot">Güclü Ayaq</label>
+                            <div class="input-wrapper">
+                                <i class="input-icon fas fa-shoe-prints"></i>
+                                <select id="foot" name="foot" required>
+                                    <option value="" data-translate="footPlaceholder">Select Foot</option>
+                                    <option value="Sağ" data-translate="rightFoot">Right</option>
+                                    <option value="Sol" data-translate="leftFoot">Left</option>
+                                    <option value="Hər ikisi" data-translate="both">Both</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-back" id="back-button" data-translate="back">⬅
+                                Gerİ</button>
+                            <button type="button" class="btn" id="next-button" data-translate="next">Növbətİ <i
+                                    class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div id="third-line" class="form-step">
+                        <div class="form-step-header">
+                            <h2 data-translate="paymentTerms">Ödəniş və Qaytarılma Şərtləri</h2>
+                            <p class="form-subtitle" data-translate="readTerms">Zəhmət olmasa şərtləri oxuyub
+                                təsdiqləyin</p>
+                        </div>
+
+                        <div class="terms-container">
+                            <h3 data-translate="rules">El Mejor Futbol Yay Kampı – Ödəniş və Qaytarılma Şərtləri</h3>
+
+                            <div class="terms-section">
+                                <h4 data-translate="firstRule" style="font-weight: bold;">1. Zədələnmə halında tibbi xərclər</h4>
+                                <ul>
+                                    <li data-translate="firstRuleContent">Camp zamanı futbolçunun hər hansı zədə alması halında müalicə xərcləri tam
+                                        olaraq təşkilatçılar tərəfindən qarşılanacaqdır.</li>
+                                </ul>
+                            </div>
+
+                            <div class="terms-section">
+                                <h4 data-translate="secondRule" style="font-weight: bold;">2. Ödəniş və iştirak qaydaları</h4>
+                                <ul>
+                                    <li data-translate="secondRuleFirst">Campda iştirak üçün tam ödəniş 1 iyun 2025 tarixinədək edilməlidir.</li>
+                                    <li data-translate="secondRuleSecond">İştirakçı seçim mərhələsindən keçdiyi halda, viza və biletlər təşkilatçılar
+                                        tərəfindən qarşılanacaqdır.</li>
+                                    <li data-translate="secondRuleThird">Ödənişə 14 günlük məşq proqramı və idman geyimi daxildir.</li>
+                                </ul>
+                            </div>
+
+                            <div class="terms-section">
+                                <h4 data-translate="thirdRule" style="font-weight: bold;">3. Ödənişin geri qaytarılması qaydaları</h4>
+                                <ul>
+                                    <li data-translate="thirdRuleFirst">Tam ödəniş edilmiş, lakin iştirak edilmədiyi halda, məbləğ geri qaytarılmır.
+                                    </li>
+                                    <li data-translate="thirdRuleSecond">İlkin ödəniş edildikdən sonra, tam məbləğin ən gec 1 iyun 2025 tarixinədək
+                                        ödənilməsi mütləqdir.</li>
+                                    <li data-translate="thirdRuleThird">1 iyun 2025 tarixinədək tam ödəniş edilmədiyi halda ilkin ödəniş (depozit) geri
+                                        qaytarılmır və itirilmiş hesab olunur.</li>
+                                    <li data-translate="thirdRuleFourth">1 iyun 2025 tarixindən sonra edilən heç bir ödəniş geri qaytarılmır.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="input-group terms-confirmation">
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" id="terms-agreement" name="terms-agreement" required>
+                                <label for="terms-agreement" data-translate="acceptTerms">Yuxarıda göstərilən bütün
+                                    şərtləri oxudum və qəbul
+                                    edirəm</label>
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button type="button" class="btn back-btn" id="back-button" data-translate="back"><i
+                                    class="fas fa-arrow-left"></i> Gerİ</button>
+                            <button type="submit" class="btn submit-btn" id="submit-button"
+                                data-translate="submit">Təsdİq Et</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="info-section" id="info-section">
+                <div class="info-content-wrapper">
+                    <div class="info-step active" id="first-info">
+                        <div class="logo">
+                            <img src="logo.webp" alt="El Mejor Camp Logo">
+                        </div>
+                        <div class="info-header">
+                            <h2 data-translate="welcomeTitle">Welcome to<br>El Mejor Camp</h2>
+                            <p class="highlight-text" data-translate="campHighlight">The biggest football training camp
+                                of 2025</p>
+                            <p class="info-description" data-translate="campDescription">El Mejor Camp 2025 offers a
+                                unique training opportunity for young footballers.</p>
+                        </div>
+                        <div class="features">
+                            <div class="feature-item">
+                                <i class="feature-icon fas fa-star"></i>
+                                <span class="feature-text" data-translate="professionalCoaches">Professional
+                                    coaches</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="feature-icon fas fa-futbol"></i>
+                                <span class="feature-text" data-translate="spanishMethodology">Training with Spanish
+                                    methodology</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <img src="logo.webp" alt="El Mejor Camp Logo" class="footer-logo">
+                <p class="footer-title" data-translate="footerTitle">2025-ci ilin ən böyük futbol təlim düşərgəsi</p>
+                <p class="footer-description" data-translate="footerDescription">El Mejor Camp, İspaniyanın məşhur futbol klublarında professional
+                    təlim-məşq imkanı təqdim edən unikal futbol düşərgəsidir.</p>
+            </div>
+            <div class="camp-info">
+                <h3 data-translate="campInfo">Düşərgə Məlumatları</h3>
+                <div class="info-item">
+                    <i class="fas fa-calendar"></i>
+                    <div class="info-text">
+                        <span data-translate="time">Müddət:</span>
+                        <p data-translate="timeValue">2 həftə (30 İyun 2025 - 13 İyul 2025)</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-text">
+                        <span data-translate="place">Məkan:</span>
+                        <p data-translate="placeValue">Bakı, Azərbaycan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <h3 data-translate="contact">c</h3>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+994 55 608 47 07</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Soccer@elmejorazerbaijan.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/elmejorcamp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/994556084707" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-translate="rights">© 2025 El Mejor Camp. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
