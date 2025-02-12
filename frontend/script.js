@@ -170,6 +170,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     player_strong_foot: player_strong_foot
                 })
             });
+
+            console.log(response)
         } catch (error) {
             console.error("Error:", error);
             alert("An error occurred. Please try again.");
