@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 })
             });
 
-            console.log(response)
+            console.log(response);
         } catch (error) {
             console.error("Error:", error);
             alert("An error occurred. Please try again.");
