@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const player_strong_foot = document.getElementById('foot').value;
 
         try {
-            const response = await fetch("https://elmejorcamp-6.onrender.com:10000/api/v1/sheets/", {
+            const response = await fetch("https://elmejorcamp.onrender.com:10000/api/v1/sheets/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
