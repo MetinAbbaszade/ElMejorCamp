@@ -926,6 +926,20 @@ select.error:focus {
     }
 }
 
+@media screen and (max-height: 910px) {
+    .feature-item:nth-child(2){
+        display: none;
+    }
+}
+
+@media screen and (max-height: 791px) {
+    .feature-item:nth-child(1){
+        display: none;
+    }
+}
+
+
+
 .terms-container h3 {
     color: #2c3e50;
     margin-bottom: 20px;
@@ -989,6 +1003,10 @@ select.error:focus {
     gap: 20px;
     justify-content: space-between;
     margin: 30px;
+}
+.button-group .btn{
+    margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 .back-btn {
