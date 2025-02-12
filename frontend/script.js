@@ -133,6 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     form.addEventListener('submit', async function (e) {
+        console.log('submitted');
         e.preventDefault();
 
         if (!validateStep(currentStep)) {
@@ -154,7 +155,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const player_strong_foot = document.getElementById('foot').value;
 
         try {
-            const response = await fetch("https://elmejorcamp.onrender.com:10000/api/v1/sheets/", {
+            console.log('Fetching');
+            const response = await fetch("https://elmejorcamp.onrender.com/api/v1/sheets/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
